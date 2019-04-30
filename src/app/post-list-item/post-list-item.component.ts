@@ -9,7 +9,7 @@ export class PostListItemComponent implements OnInit {
 
   @Input() title: string;
   @Input() content: string;
-  @Input() loveIts: string;
+  @Input() loveIts: number;
   @Input() date: string;
 
   constructor() { }
@@ -19,12 +19,10 @@ export class PostListItemComponent implements OnInit {
 
   onLoveIt() {
     this.loveIts++;
-    console.log('love' + this.loveIts);
   }
 
   onDontLoveIt() {
-    this.loveIts --;
-    console.log('Don\'t love' + this.loveIts);
+    this.loveIts--;
   }
 
 }

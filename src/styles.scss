@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+li {
+  list-style: none;
+}
+
+p, h2 {
+  text-align: left;
+  margin: 20px 0px 20px 0px;
+}
+
+.date {
+  text-align: right;
+
+}
