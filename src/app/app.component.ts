@@ -26,7 +26,7 @@ export class AppComponent {
             created_at: '1950'
         },
         {
-            title: 'PSQ ( ou QSG )',
+            title: 'PSG ( ou QSG )',
             content: 'Le Paris Saint-Germain Football Club, abrégé en Paris Saint-Germain FC, couramment appelé Paris Saint-Germain ' +
                 'ou PSG, est un club de football français faisant partie du club omnisports du même nom, basé à Saint-Germain-en-Laye ' +
                 'et à Paris. ',
