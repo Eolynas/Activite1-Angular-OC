@@ -15,7 +15,7 @@ export class AppComponent {
                 'Montmirail. Le club marseillais joue au stade de l\'Huveaune de 1904 à 1937, date à laquelle est inauguré ' +
                 'le stade Vélodrome. ',
             loveIts: 100,
-            created_at: '31/08/1899'
+            created_at: '1899-08-31'
         },
         {
             title: 'L\'Olympique de Lyon',
@@ -23,7 +23,7 @@ export class AppComponent {
                 'lyonnais à Décines-Charpieu, est présidé depuis juin 1987 par Jean-Michel Aulas et l\'équipe masculine est entraînée ' +
                 'par Bruno Génésio depuis le 24 décembre 2015. Il évolue depuis 1989 en Ligue 1. ',
             loveIts: -1,
-            created_at: '1950'
+            created_at: '01/01/1950'
         },
         {
             title: 'PSG ( ou QSG )',

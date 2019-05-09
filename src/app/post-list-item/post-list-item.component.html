@@ -3,7 +3,8 @@
                 'list-group-item-danger': loveIts < 0}">
   <div class="row">
     <h2 class="col-lg-8"> {{ title }} </h2>
-    <h2 class="col-lg-4 date" style="font-size: 20px; ">{{ date }}</h2>
+    <h2 class="col-lg-4 date"
+        style="font-size: 20px; ">{{ date | date : 'longDate' : '+0200': 'fr-FR'  }}</h2>
   </div>
   <div>
     <p>{{ content }}</p>
