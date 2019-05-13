@@ -1,16 +1,17 @@
 <li [ngClass]="{'list-group-item': true,
-                'list-group-item-success': loveIts > 0,
-                'list-group-item-danger': loveIts < 0}">
+                'list-group-item-success': post.loveIts > 0,
+                'list-group-item-danger': post.loveIts < 0}">
   <div class="row">
-    <h2 class="col-lg-8"> {{ title }} </h2>
+    <h2 class="col-lg-8"> {{ post.title }} | index {{ index }}</h2>
     <h2 class="col-lg-4 date"
-        style="font-size: 20px; ">{{ date | date : 'longDate' : '+0200': 'fr-FR'  }}</h2>
+        style="font-size: 20px; "> Date de création: {{ post.createdAt | date : 'longDate' : '+0200': 'fr-FR'  }}</h2>
   </div>
   <div>
-    <p>{{ content }}</p>
+    <p>{{ post.content }}</p>
   </div>
   <div>
-    <button type="button" class="btn btn-success" (click)="onLoveIt()">Love it !!! {{ loveIts }} </button>
-    <button type="button" class="btn btn-danger" (click)="onDontLoveIt()">Don't love it !!! {{ loveIts }} </button>
+    <button type="button" class="btn btn-success" (click)="onLoveIt()">Love it !!! {{ post.loveIts }} </button>
+    <button type="button" class="btn btn-danger" (click)="onDontLoveIt()">Don't love it !!! {{ post.loveIts }} </button>
+    <button type="button" class="btn btn-danger pull-right" (click)="deletePost(post)" >Supprimer</button>
   </div>
 </li>

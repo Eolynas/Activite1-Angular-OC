@@ -1,4 +1,5 @@
 import {Component, Input} from '@angular/core';
+import * as firebase from 'firebase';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +9,23 @@ import {Component, Input} from '@angular/core';
 export class AppComponent {
   title = 'Activité 1 | Angular OC';
 
-  posts = [
+
+  constructor() {
+    const config = {
+      apiKey: "AIzaSyDw7u5tTuRKguXVlqlXGy0nAhaHWNSFUVI",
+      authDomain: "apppostsangular.firebaseapp.com",
+      databaseURL: "https://apppostsangular.firebaseio.com",
+      projectId: "apppostsangular",
+      storageBucket: "apppostsangular.appspot.com",
+      messagingSenderId: "775184899141",
+      appId: "1:775184899141:web:52264d9dfeb57eb3"
+    };
+    firebase.initializeApp(config);
+  }
+
+
+
+  /*posts = [
         {
             title: 'L\'Olympique de Marseille',
             content: 'L\'Olympique de Marseille est un club de football français fondé en août 1899 à Marseille par René Dufaure de ' +
@@ -41,6 +58,5 @@ export class AppComponent {
             loveIts: 1,
             created_at: '1944'
         }
-  ];
-  postTest = 'Post 1';
+  ];*/
 }
