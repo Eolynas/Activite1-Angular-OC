@@ -2,7 +2,7 @@
                 'list-group-item-success': post.loveIts > 0,
                 'list-group-item-danger': post.loveIts < 0}">
   <div class="row">
-    <h2 class="col-lg-8"> {{ post.title }} | index {{ index }}</h2>
+    <h2 class="col-lg-8"> {{ post.title }} </h2>
     <h2 class="col-lg-4 date"
         style="font-size: 20px; "> Date de création: {{ post.createdAt | date : 'longDate' : '+0200': 'fr-FR'  }}</h2>
   </div>
